@@ -17,15 +17,10 @@
     <webdrivermanager.version>5.0.3</webdrivermanager.version>
     <junit.version>5.6.2</junit.version>
 
+
   </properties>
 
   <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>io.github.bonigarcia</groupId>
       <artifactId>webdrivermanager</artifactId>
@@ -67,9 +62,12 @@
       <version>${junit.version}</version>
       <scope>compile</scope>
     </dependency>
+
   </dependencies>
 
   <build>
 
   </build>
 </project>
+
+

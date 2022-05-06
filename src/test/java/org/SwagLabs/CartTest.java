@@ -1,7 +1,8 @@
 package org.SwagLabs;
 
-import org.junit.Assert;
+
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.Assertions;
 
 
 public class CartTest extends AbstractTest{
@@ -25,7 +26,7 @@ public class CartTest extends AbstractTest{
 
 
         String nameTitle = mainPage.getNameTitle();
-        Assert.assertEquals(nameTitle, "PRODUCTS");
+        Assertions.assertEquals(nameTitle, "PRODUCTS");
 
         mainPage
                 .clickAddToCartBackpack()
@@ -34,7 +35,7 @@ public class CartTest extends AbstractTest{
 
         String countCart = mainPage.getCountCart();
 
-        Assert.assertEquals(countCart, "1");
+        Assertions.assertEquals(countCart, "1");
 
         mainPage
                 .removeBackpackVisibility()
@@ -63,7 +64,7 @@ public class CartTest extends AbstractTest{
 
 
         String nameTitle = mainPage.getNameTitle();
-        Assert.assertEquals(nameTitle, "PRODUCTS");
+        Assertions.assertEquals(nameTitle, "PRODUCTS");
 
         mainPage
                 .clickAddToCartBackpack()
@@ -73,14 +74,14 @@ public class CartTest extends AbstractTest{
 
         String countCart = mainPage.getCountCart();
 
-        Assert.assertEquals(countCart, "1");
+        Assertions.assertEquals(countCart, "1");
 
         mainPage
                 .clickAddToCartBikeLight()
                 .getCountCart();
 
        countCart = mainPage.getCountCart();
-        Assert.assertEquals(countCart, "2");
+        Assertions.assertEquals(countCart, "2");
 
         mainPage
                 .removeBackpackVisibility()
@@ -88,7 +89,7 @@ public class CartTest extends AbstractTest{
                 .getCountCart();
 
        countCart = mainPage.getCountCart();
-        Assert.assertEquals(countCart, "1");
+        Assertions.assertEquals(countCart, "1");
 
         Thread.sleep(1000l);
 

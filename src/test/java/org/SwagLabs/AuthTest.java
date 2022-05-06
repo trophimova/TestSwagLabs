@@ -1,6 +1,6 @@
 package org.SwagLabs;
 
-import org.junit.Assert;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -29,7 +29,7 @@ public class AuthTest extends AbstractTest {
 
         String textError = authPage.getErrorMessage();
 
-       Assert.assertEquals(textError, "Epic sadface: Password is required");
+       Assertions.assertEquals(textError, "Epic sadface: Password is required");
 
         logger.info("Тест на проверку авторизации с пустым полем Password закончен");
         Thread.sleep(1000l);
@@ -54,7 +54,7 @@ public class AuthTest extends AbstractTest {
 
         String textError = authPage.getErrorMessage();
 
-        Assert.assertEquals(textError, "Epic sadface: Username is required");
+        Assertions.assertEquals(textError, "Epic sadface: Username is required");
         Thread.sleep(1000l);
 
     }
@@ -79,7 +79,7 @@ public class AuthTest extends AbstractTest {
 
 
         String nameTitle = mainPage.getNameTitle();
-        Assert.assertEquals(nameTitle, "PRODUCTS");
+        Assertions.assertEquals(nameTitle, "PRODUCTS");
         Thread.sleep(1000l);
 
     }
@@ -102,7 +102,7 @@ public class AuthTest extends AbstractTest {
 
         String textError = authPage.getErrorMessage();
 
-        Assert.assertEquals(textError, "Epic sadface: Username and password do not match any user in this service");
+        Assertions.assertEquals(textError, "Epic sadface: Username and password do not match any user in this service");
         Thread.sleep(1000l);
 
     }
