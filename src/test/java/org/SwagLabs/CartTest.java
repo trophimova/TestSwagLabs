@@ -3,8 +3,9 @@ package org.SwagLabs;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.Assertions;
+import io.qameta.allure.*;
 
-
+@Story("Тестирование функционала  корзины")
 public class CartTest extends AbstractTest{
 
     @Test

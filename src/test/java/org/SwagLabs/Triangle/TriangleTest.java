@@ -11,8 +11,9 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import io.qameta.allure.*;
 
-
+@Story("Тестирование расчета площади треугольника")
 public class TriangleTest {
     static Logger logger = LoggerFactory.getLogger(AuthTest.class);
 

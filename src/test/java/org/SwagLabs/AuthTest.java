@@ -1,17 +1,19 @@
 package org.SwagLabs;
 
+import io.qameta.allure.*;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-
+@Story("Тестирование авторизации на сайте")
 public class AuthTest extends AbstractTest {
 
     static Logger logger = LoggerFactory.getLogger(AuthTest.class);
 
     @Test
     @DisplayName("Проверка авторизации c пустым полем Password")
+    @Link("https://www.saucedemo.com")
     public void passwordEmptyFieldTest() throws InterruptedException {
 
         logger.info("Тест на проверку авторизации с пустым полем Password запущен");
